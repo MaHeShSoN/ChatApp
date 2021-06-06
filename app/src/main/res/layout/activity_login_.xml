@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBFBFB"
+    android:backgroundTint="#7EE804"
+    tools:context=".LoginActivity">
+
+
+    <EditText
+        android:id="@+id/userName_1"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="42dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/userPassword_1"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/userName_1"
+        app:layout_constraintStart_toStartOf="@+id/userName_1"
+        app:layout_constraintTop_toBottomOf="@+id/userName_1" />
+
+    <Button
+        android:id="@+id/LoginButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/rounded_button"
+        android:text="Login"
+        android:onClick="sendUserToMainScreen"
+        app:layout_constraintEnd_toEndOf="@+id/userPassword_1"
+        app:layout_constraintStart_toStartOf="@+id/userPassword_1"
+        app:layout_constraintTop_toBottomOf="@+id/userPassword_1" />
+
+    <TextView
+        android:id="@+id/backToRegisterPage"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:text="Back To Register Page"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/LoginButton"
+        app:layout_constraintStart_toStartOf="@id/LoginButton"
+        app:layout_constraintTop_toBottomOf="@id/LoginButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>
